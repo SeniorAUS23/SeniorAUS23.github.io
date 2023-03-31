@@ -12,17 +12,20 @@
       padding: 5em 0;
       font-weight: 100;
     }
+
     #app .name {
       color: #555;
       font-size: 1.6em;
       font-weight: 500;
       margin: 1em 0;
     }
+
     #app img {
       width: 7.5em;
       height: 7.5em;
       border-radius: 20%;
     }
+
     #app .install {
       background: #1788ff;
       border-radius: 5em;
@@ -32,16 +35,60 @@
       color: #fff;
       margin: 2em 0;
     }
-    a:link,a:hover,a:visited,a:active{
+
+    #app .instructions {
+      margin-top: 2em;
+      text-align: center;
+      color: #555;
+    }
+
+    #app .instructions ol {
+      list-style-type: decimal;
+      padding-left: 2em;
+    }
+
+    a:link, a:hover, a:visited, a:active {
      text-decoration: none;
+    }
+
+    /* Adjust the color scheme for dark mode */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #222;
+        color: #ccc;
+      }
+
+      #app .name {
+        color: #fff;
+      }
+
+      #app .install {
+        background-color: #444;
+        color: #ccc;
+      }
+
+      #app .instructions {
+        color: #ccc;
+      }
     }
   </style>
 </head>
 <body>
   <div id="app">
-      <img src="https://senioraus23.github.io/AppIcon60x60@2x.png" alt="">
+      <img src="https://senioraus23.github.io/Icon.png" alt="">
       <div class="name">Nexus</div>
       <a class="install" href="itms-services://?action=download-manifest&url=https://senioraus23.github.io/manifest.plist">Download</a>
+      <div class="instructions">
+        <h2>How to Install</h2>
+        <ol>
+          <li>Press the Download Button Above</li>
+          <li>Open Settings.</li>
+          <li>Go to Privacy &amp; Security.</li>
+          <li>Scroll down to Developer Mode.</li>
+          <li>Toggle switch ON and follow instructions.</li>
+          <li>Your device will be rebooted and you will be able to open the Nexus Application.</li>
+        </ol>
+      </div>
   </div>
 </body>
 </html>
